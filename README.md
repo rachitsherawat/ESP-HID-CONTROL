@@ -1,0 +1,2 @@
+# ESP-HID-CONTROL
+ESP32 C6 devkitC
