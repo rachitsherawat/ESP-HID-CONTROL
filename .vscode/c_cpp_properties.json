@@ -1,0 +1,19 @@
+{
+    "configurations": [
+        {
+            "name": "ESP-IDF",
+            "compilerPath": "C:\\Espressif\\tools\\riscv32-esp-elf\\esp-14.2.0_20251107\\riscv32-esp-elf\\bin\\riscv32-esp-elf-gcc.exe",
+            "cppStandard": "c++17",
+            "cStandard": "c11",
+            "intelliSenseMode": "windows-gcc-riscv",
+            "compileCommands": "${workspaceFolder}/firmware/build/compile_commands.json",
+            "browse": {
+                "path": [
+                    "${workspaceFolder}/firmware/main"
+                ],
+                "limitSymbolsToIncludedHeaders": true
+            }
+        }
+    ],
+    "version": 4
+}

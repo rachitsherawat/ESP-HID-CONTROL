@@ -1,0 +1,36 @@
+{
+    "cmake.sourceDirectory": "${workspaceFolder}/firmware",
+    "idf.espIdfPathWin": "C:\\Espressif\\frameworks\\esp-idf-v5.5.3",
+    "idf.pythonBinPathWin": "C:\\Espressif\\python_env\\idf5.5_py3.11_env\\Scripts\\python.exe",
+    "idf.toolsPathWin": "C:\\Espressif",
+    "idf.customExtraPaths": "C:\\Espressif\\tools\\xtensa-esp-elf-gdb\\14.2_20240403\\xtensa-esp-elf-gdb\\bin;C:\\Espressif\\tools\\riscv32-esp-elf-gdb\\14.2_20240403\\riscv32-esp-elf-gdb\\bin;C:\\Espressif\\tools\\xtensa-esp-elf\\esp-14.2.0_20251107\\xtensa-esp-elf\\bin;C:\\Espressif\\tools\\riscv32-esp-elf\\esp-14.2.0_20251107\\riscv32-esp-elf\\bin;C:\\Espressif\\tools\\esp-clang\\19.1.5\\esp-clang\\bin;C:\\Espressif\\tools\\esp-rom-elfs\\20241011;C:\\Espressif\\tools\\openocd-esp32\\v0.12.0-esp32-20241016\\openocd-esp32\\bin;C:\\Espressif\\tools\\ninja\\1.12.1;C:\\Espressif\\tools\\cmake\\3.30.2\\bin;C:\\Espressif\\tools\\dfu-util\\0.11\\dfu-util-0.11-win64;C:\\Espressif\\tools\\esp32ulp-elf\\2.38_20240113\\esp32ulp-elf\\bin",
+    "idf.customExtraVars": {
+        "OPENOCD_SCRIPTS": "C:\\Espressif\\tools\\openocd-esp32\\v0.12.0-esp32-20241016/openocd-esp32/share/openocd/scripts",
+        "IDF_CCACHE_ENABLE": "1",
+        "ESP_ROM_ELF_DIR": "C:\\Espressif\\tools\\esp-rom-elfs\\20241011/"
+    },
+    "idf.adapterTargetName": "esp32c6",
+    "idf.portWin": "COM4",
+    "idf.openOcdConfigs": [
+        "board/esp32c6-builtin.cfg"
+    ],
+    "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools",
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true,
+        "firmware/build": true
+    },
+    "search.exclude": {
+        "**/node_modules": true,
+        "**/bower_components": true,
+        "**/*.code-search": true,
+        "firmware/build": true
+    },
+    "idf.currentSetup": "/Users/rachitkumar/esp/v5.4.3/esp-idf",
+    "idf.flashType": "JTAG",
+    "idf.port": "/dev/tty.usbmodem58FC0552801"
+}
