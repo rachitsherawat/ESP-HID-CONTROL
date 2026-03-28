@@ -1,0 +1,2 @@
+source /Users/rachitkumar/Projects/ESP-HID-Control/build/gdbinit/symbols
+source /Users/rachitkumar/Projects/ESP-HID-Control/build/gdbinit/connect

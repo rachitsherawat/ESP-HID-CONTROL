@@ -12,6 +12,7 @@ static const char *TAG = "HID_SERVICE";
 static uint8_t hid_addr_type;
 static uint16_t hid_h_conn;
 static int ble_hid_gap_event(struct ble_gap_event *event, void *arg);
+static void ble_host_task(void *param);
 
 // Handles for notifications
 static uint16_t keyboard_report_handle;
@@ -194,6 +195,12 @@ static void ble_hid_on_sync(void) {
     ble_hid_advertise();
 }
 
+static void ble_host_task(void *param) {
+    (void)param;
+    nimble_port_run();
+    nimble_port_freertos_deinit();
+}
+
 // --- Public API ---
 
 void hid_init(void) {
@@ -217,7 +224,7 @@ void hid_init(void) {
     ble_svc_gap_device_name_set("ESP32-C6-HID");
     
     ESP_LOGI(TAG, "hid_init: step 5 - nimble_port_freertos_init");
-    nimble_port_freertos_init(NULL);
+    nimble_port_freertos_init(ble_host_task);
     ESP_LOGI(TAG, "hid_init: complete");
 }
 
